@@ -1,0 +1,3181 @@
+[
+  {
+    "cards": [
+      {
+        "name": "Card A",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "groceries": 3.0,
+            "dining": 1.0,
+            "travel": 1.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 5000
+      },
+      {
+        "name": "Card B",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "groceries": 1.5,
+            "dining": 2.0,
+            "travel": 1.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Card C",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "groceries": 2.0,
+            "dining": 2.0,
+            "travel": 2.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 3000
+      }
+    ],
+    "transaction": {
+      "product": "Organic Groceries",
+      "category": "groceries",
+      "vendor": "Local Supermarket",
+      "price": 75.00
+    },
+    "best_card": "Card A",
+    "explanation": "Card A offers a 3% rewards rate on groceries, maximizing cashback for this transaction despite a moderate APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Card X",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "travel": 2.0,
+            "dining": 1.0,
+            "electronics": 1.0
+          }
+        },
+        "apr": 20.0,
+        "credit_limit": 8000
+      },
+      {
+        "name": "Card Y",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "travel": 4.0,
+            "dining": 1.0,
+            "electronics": 1.0
+          }
+        },
+        "apr": 22.0,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Card Z",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "travel": 1.0,
+            "dining": 1.0,
+            "electronics": 2.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 4000
+      }
+    ],
+    "transaction": {
+      "product": "Round-Trip Flight",
+      "category": "travel",
+      "vendor": "Airline Company",
+      "price": 350.00
+    },
+    "best_card": "Card Y",
+    "explanation": "Despite a higher APR, Card Y's 4% travel rewards yield the highest cashback for the flight expense."
+  },
+  {
+    "cards": [
+      {
+        "name": "Card 1",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "dining": 3.0,
+            "entertainment": 1.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 4500
+      },
+      {
+        "name": "Card 2",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "dining": 1.0,
+            "entertainment": 2.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 14.0,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Card 3",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "dining": 2.0,
+            "entertainment": 3.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 5000
+      }
+    ],
+    "transaction": {
+      "product": "Dinner for Two",
+      "category": "dining",
+      "vendor": "Upscale Restaurant",
+      "price": 120.00
+    },
+    "best_card": "Card 1",
+    "explanation": "Card 1's 3% rewards on dining make it the optimal choice, even though its APR is slightly higher than some alternatives."
+  },
+  {
+    "cards": [
+      {
+        "name": "Platinum Plus",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "electronics": 2.0,
+            "travel": 1.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 19.0,
+        "credit_limit": 10000
+      },
+      {
+        "name": "Tech Saver",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "electronics": 5.0,
+            "travel": 1.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 24.0,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Everyday Card",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "electronics": 1.0,
+            "travel": 1.0,
+            "groceries": 2.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 5000
+      }
+    ],
+    "transaction": {
+      "product": "4K TV",
+      "category": "electronics",
+      "vendor": "Electronics Retailer",
+      "price": 800.00
+    },
+    "best_card": "Tech Saver",
+    "explanation": "The 5% reward on electronics from Tech Saver maximizes cashback for the high-value TV purchase, outweighing its higher APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Fuel Flex",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "fuel": 4.0,
+            "groceries": 1.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 21.0,
+        "credit_limit": 4000
+      },
+      {
+        "name": "RoadRunner",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "fuel": 3.0,
+            "groceries": 1.0,
+            "dining": 2.0
+          }
+        },
+        "apr": 19.0,
+        "credit_limit": 4500
+      },
+      {
+        "name": "Everyday Spend",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "fuel": 2.0,
+            "groceries": 3.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 5500
+      }
+    ],
+    "transaction": {
+      "product": "Gasoline",
+      "category": "fuel",
+      "vendor": "Local Gas Station",
+      "price": 60.00
+    },
+    "best_card": "Fuel Flex",
+    "explanation": "Fuel Flex provides the best rewards for fuel with a 4% rate, making it ideal despite its higher APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Travel Pro",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "travel": 3.0,
+            "dining": 1.0,
+            "hotels": 2.0
+          }
+        },
+        "apr": 20.0,
+        "credit_limit": 9000
+      },
+      {
+        "name": "Jet Setter",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "travel": 2.0,
+            "dining": 1.0,
+            "hotels": 1.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 8000
+      },
+      {
+        "name": "Hotel Helper",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "travel": 1.0,
+            "dining": 1.0,
+            "hotels": 5.0
+          }
+        },
+        "apr": 22.0,
+        "credit_limit": 7000
+      }
+    ],
+    "transaction": {
+      "product": "Weekend Hotel Stay",
+      "category": "hotels",
+      "vendor": "Luxury Hotel Chain",
+      "price": 400.00
+    },
+    "best_card": "Hotel Helper",
+    "explanation": "Hotel Helper offers an outstanding 5% reward rate on hotel stays, resulting in greater cashback for this transaction."
+  },
+  {
+    "cards": [
+      {
+        "name": "Daily Deals",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "online": 2.0,
+            "groceries": 1.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Net Saver",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "online": 3.0,
+            "groceries": 1.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 5000
+      },
+      {
+        "name": "Shop Smart",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "online": 1.0,
+            "groceries": 2.0,
+            "dining": 2.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 5500
+      }
+    ],
+    "transaction": {
+      "product": "Wireless Headphones",
+      "category": "online",
+      "vendor": "E-Commerce Site",
+      "price": 150.00
+    },
+    "best_card": "Net Saver",
+    "explanation": "Net Saver's 3% online reward accelerates cashback earnings for online purchases, making it the top choice for this transaction."
+  },
+  {
+    "cards": [
+      {
+        "name": "Family First",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "groceries": 3.0,
+            "dining": 2.0,
+            "fuel": 1.0
+          }
+        },
+        "apr": 14.0,
+        "credit_limit": 6500
+      },
+      {
+        "name": "Smart Spend",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "groceries": 2.0,
+            "dining": 1.0,
+            "fuel": 1.0
+          }
+        },
+        "apr": 12.0,
+        "credit_limit": 5000
+      },
+      {
+        "name": "Value Card",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "groceries": 1.0,
+            "dining": 3.0,
+            "fuel": 2.0
+          }
+        },
+        "apr": 13.0,
+        "credit_limit": 4000
+      }
+    ],
+    "transaction": {
+      "product": "Monthly Grocery Shopping",
+      "category": "groceries",
+      "vendor": "Supermarket",
+      "price": 300.00
+    },
+    "best_card": "Family First",
+    "explanation": "The 3% reward on groceries from Family First ensures maximum cashback on the monthly spend, even if other cards offer lower APRs."
+  },
+  {
+    "cards": [
+      {
+        "name": "Elite Rewards",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "dining": 2.0,
+            "travel": 2.0,
+            "entertainment": 3.0
+          }
+        },
+        "apr": 19.0,
+        "credit_limit": 7500
+      },
+      {
+        "name": "Gourmet Card",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "dining": 5.0,
+            "travel": 1.0,
+            "entertainment": 1.0
+          }
+        },
+        "apr": 21.0,
+        "credit_limit": 6800
+      },
+      {
+        "name": "Entertainment Plus",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "dining": 1.0,
+            "travel": 1.0,
+            "entertainment": 4.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 6000
+      }
+    ],
+    "transaction": {
+      "product": "Concert Tickets",
+      "category": "entertainment",
+      "vendor": "Ticketing Service",
+      "price": 200.00
+    },
+    "best_card": "Entertainment Plus",
+    "explanation": "Entertainment Plus provides a 4% reward rate on entertainment, offering superior benefits for ticket purchases compared to the other cards."
+  },
+  {
+    "cards": [
+      {
+        "name": "Secure Card",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "online": 2.0,
+            "travel": 1.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 13.0,
+        "credit_limit": 3000
+      },
+      {
+        "name": "Budget Saver",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "online": 1.0,
+            "travel": 2.0,
+            "groceries": 2.0
+          }
+        },
+        "apr": 11.0,
+        "credit_limit": 3500
+      },
+      {
+        "name": "Prime Select",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "online": 3.0,
+            "travel": 1.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 14.0,
+        "credit_limit": 4000
+      }
+    ],
+    "transaction": {
+      "product": "Bluetooth Speaker",
+      "category": "online",
+      "vendor": "Online Retailer",
+      "price": 80.00
+    },
+    "best_card": "Prime Select",
+    "explanation": "Prime Select's 3% reward on online purchases makes it the best choice for this electronics purchase, despite a slightly higher APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Urban Explorer",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "transit": 4.0,
+            "dining": 2.0,
+            "entertainment": 1.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 6000
+      },
+      {
+        "name": "City Life",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "transit": 2.0,
+            "dining": 3.0,
+            "entertainment": 2.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Commuter Plus",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "transit": 3.0,
+            "dining": 1.0,
+            "entertainment": 1.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 5500
+      }
+    ],
+    "transaction": {
+      "product": "Monthly Transit Pass",
+      "category": "transit",
+      "vendor": "City Metro",
+      "price": 120.00
+    },
+    "best_card": "Urban Explorer",
+    "explanation": "Urban Explorer offers the highest rewards rate at 4% for transit purchases, making it the ideal choice for a monthly transit pass despite its higher APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Health Optimum",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "pharmacy": 3.0,
+            "fitness": 2.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 15.5,
+        "credit_limit": 5000
+      },
+      {
+        "name": "Wellness Prime",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "pharmacy": 4.0,
+            "fitness": 1.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 4500
+      },
+      {
+        "name": "Fit Card",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "pharmacy": 1.0,
+            "fitness": 5.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 4800
+      }
+    ],
+    "transaction": {
+      "product": "Prescription Medications",
+      "category": "pharmacy",
+      "vendor": "Local Pharmacy",
+      "price": 85.00
+    },
+    "best_card": "Wellness Prime",
+    "explanation": "Wellness Prime provides a 4% reward rate for pharmacy purchases, maximizing cash back on prescription medications compared to other cards."
+  },
+  {
+    "cards": [
+      {
+        "name": "Office Pro",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "office_supplies": 4.0,
+            "utilities": 1.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 7500
+      },
+      {
+        "name": "Business Elite",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "office_supplies": 2.0,
+            "utilities": 3.0,
+            "dining": 2.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 10000
+      },
+      {
+        "name": "Entrepreneur Card",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "office_supplies": 3.0,
+            "utilities": 2.0,
+            "dining": 3.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 8500
+      }
+    ],
+    "transaction": {
+      "product": "Printer and Ink Supplies",
+      "category": "office_supplies",
+      "vendor": "Office Superstore",
+      "price": 250.00
+    },
+    "best_card": "Office Pro",
+    "explanation": "Office Pro's 4% reward rate on office supplies yields the highest cashback for this purchase, despite Business Elite's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Home Improvement+",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "hardware": 4.0,
+            "furniture": 1.0,
+            "utilities": 1.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 8000
+      },
+      {
+        "name": "DIY Master",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "hardware": 3.0,
+            "furniture": 2.0,
+            "utilities": 2.0
+          }
+        },
+        "apr": 14.0,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Home Decor",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "hardware": 1.0,
+            "furniture": 5.0,
+            "utilities": 1.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 7500
+      }
+    ],
+    "transaction": {
+      "product": "Power Tools Set",
+      "category": "hardware",
+      "vendor": "Hardware Depot",
+      "price": 320.00
+    },
+    "best_card": "Home Improvement+",
+    "explanation": "Home Improvement+ offers the highest cashback at 4% for hardware purchases, making it optimal for buying power tools despite slightly higher APR than DIY Master."
+  },
+  {
+    "cards": [
+      {
+        "name": "Student Essential",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "books": 3.0,
+            "dining": 2.0,
+            "transit": 1.0
+          }
+        },
+        "apr": 14.0,
+        "credit_limit": 3000
+      },
+      {
+        "name": "Campus Card",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "books": 4.0,
+            "dining": 1.0,
+            "transit": 1.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 2500
+      },
+      {
+        "name": "Scholar Plus",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "books": 2.0,
+            "dining": 3.0,
+            "transit": 2.0
+          }
+        },
+        "apr": 13.0,
+        "credit_limit": 2000
+      }
+    ],
+    "transaction": {
+      "product": "Semester Textbooks",
+      "category": "books",
+      "vendor": "University Bookstore",
+      "price": 450.00
+    },
+    "best_card": "Campus Card",
+    "explanation": "Campus Card's 4% reward rate on books provides the maximum cashback for textbook purchases, making it the best choice despite Scholar Plus's lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Holiday Spender",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "department_stores": 3.0,
+            "online": 2.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 19.0,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Gift Getter",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "department_stores": 4.0,
+            "online": 1.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 20.0,
+        "credit_limit": 5000
+      },
+      {
+        "name": "Shopper's Delight",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "department_stores": 2.0,
+            "online": 3.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 6500
+      }
+    ],
+    "transaction": {
+      "product": "Winter Clothing",
+      "category": "department_stores",
+      "vendor": "Major Department Store",
+      "price": 275.00
+    },
+    "best_card": "Gift Getter",
+    "explanation": "Gift Getter's 4% reward rate at department stores provides the most cashback for this clothing purchase despite having the highest APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Parent Perks",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "childcare": 4.0,
+            "groceries": 2.0,
+            "entertainment": 1.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Family Finances",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "childcare": 3.0,
+            "groceries": 3.0,
+            "entertainment": 1.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 6500
+      },
+      {
+        "name": "Kid's Choice",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "childcare": 2.0,
+            "groceries": 2.0,
+            "entertainment": 4.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 5000
+      }
+    ],
+    "transaction": {
+      "product": "Daycare Monthly Fee",
+      "category": "childcare",
+      "vendor": "Little Learners Daycare",
+      "price": 950.00
+    },
+    "best_card": "Parent Perks",
+    "explanation": "Parent Perks offers the highest 4% cashback rate on childcare expenses, making it optimal for the substantial daycare fee despite a moderately high APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Pet Lover",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "pet_supplies": 4.0,
+            "groceries": 1.0,
+            "healthcare": 1.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 4500
+      },
+      {
+        "name": "Animal Care",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "pet_supplies": 3.0,
+            "groceries": 1.0,
+            "healthcare": 3.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 5000
+      },
+      {
+        "name": "Furry Friend",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "pet_supplies": 2.0,
+            "groceries": 2.0,
+            "healthcare": 2.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 4800
+      }
+    ],
+    "transaction": {
+      "product": "Premium Pet Food",
+      "category": "pet_supplies",
+      "vendor": "Pet Nutrition Center",
+      "price": 95.00
+    },
+    "best_card": "Pet Lover",
+    "explanation": "Pet Lover card provides the highest reward rate at 4% for pet supplies, making it the best choice for purchasing premium pet food despite Furry Friend's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Outdoor Enthusiast",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "sporting_goods": 4.0,
+            "travel": 1.0,
+            "fuel": 1.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Adventure Card",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "sporting_goods": 3.0,
+            "travel": 3.0,
+            "fuel": 1.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Explorer Plus",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "sporting_goods": 2.0,
+            "travel": 2.0,
+            "fuel": 3.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 5500
+      }
+    ],
+    "transaction": {
+      "product": "Camping Equipment",
+      "category": "sporting_goods",
+      "vendor": "Outdoor Supply Co.",
+      "price": 350.00
+    },
+    "best_card": "Outdoor Enthusiast",
+    "explanation": "Outdoor Enthusiast offers the highest 4% cashback on sporting goods, making it ideal for camping equipment despite Explorer Plus having a lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Tech Enthusiast",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "electronics": 4.0,
+            "software": 2.0,
+            "online": 1.0
+          }
+        },
+        "apr": 19.5,
+        "credit_limit": 8000
+      },
+      {
+        "name": "Digital Life",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "electronics": 2.0,
+            "software": 4.0,
+            "online": 2.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 7500
+      },
+      {
+        "name": "Connected Card",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "electronics": 3.0,
+            "software": 3.0,
+            "online": 1.0
+          }
+        },
+        "apr": 20.0,
+        "credit_limit": 9000
+      }
+    ],
+    "transaction": {
+      "product": "Annual Software Subscription",
+      "category": "software",
+      "vendor": "Cloud Computing Inc.",
+      "price": 240.00
+    },
+    "best_card": "Digital Life",
+    "explanation": "Digital Life provides the highest reward rate at 4% for software purchases, making it the optimal choice for this annual subscription despite having a moderately high APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Coffee Lover",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "coffee_shops": 5.0,
+            "dining": 2.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 4000
+      },
+      {
+        "name": "Dining Deluxe",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "coffee_shops": 2.0,
+            "dining": 4.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 5500
+      },
+      {
+        "name": "Everyday Rewards",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "coffee_shops": 1.0,
+            "dining": 1.0,
+            "groceries": 2.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 6000
+      }
+    ],
+    "transaction": {
+      "product": "Specialty Coffee and Pastries",
+      "category": "coffee_shops",
+      "vendor": "Artisan Cafe",
+      "price": 18.50
+    },
+    "best_card": "Coffee Lover",
+    "explanation": "Coffee Lover card offers an exceptional 5% rewards rate at coffee shops, making it the optimal choice for cafe purchases despite its higher APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Music Maestro",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "streaming": 4.0,
+            "entertainment": 3.0,
+            "electronics": 1.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 5500
+      },
+      {
+        "name": "Digital Premium",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "streaming": 3.0,
+            "entertainment": 2.0,
+            "electronics": 2.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Media Plus",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "streaming": 2.0,
+            "entertainment": 4.0,
+            "electronics": 2.0
+          }
+        },
+        "apr": 15.5,
+        "credit_limit": 4500
+      }
+    ],
+    "transaction": {
+      "product": "Annual Music Streaming Subscription",
+      "category": "streaming",
+      "vendor": "Premium Music Service",
+      "price": 120.00
+    },
+    "best_card": "Music Maestro",
+    "explanation": "Music Maestro provides the highest 4% rewards rate on streaming services, making it the best choice for an annual music subscription despite its higher APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Luxury Traveler",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "hotels": 5.0,
+            "dining": 2.0,
+            "airfare": 3.0
+          }
+        },
+        "apr": 21.0,
+        "credit_limit": 15000
+      },
+      {
+        "name": "Global Explorer",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "hotels": 3.0,
+            "dining": 2.0,
+            "airfare": 4.0
+          }
+        },
+        "apr": 19.5,
+        "credit_limit": 12000
+      },
+      {
+        "name": "Weekend Getaway",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "hotels": 2.0,
+            "dining": 3.0,
+            "airfare": 2.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 10000
+      }
+    ],
+    "transaction": {
+      "product": "Luxury Resort Booking",
+      "category": "hotels",
+      "vendor": "Five-Star Resort & Spa",
+      "price": 1200.00
+    },
+    "best_card": "Luxury Traveler",
+    "explanation": "Luxury Traveler card's outstanding 5% rewards rate on hotels makes it the optimal choice for an expensive resort booking, despite having the highest APR among the options."
+  },
+  {
+    "cards": [
+      {
+        "name": "Auto Advantage",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "auto_repairs": 4.0,
+            "fuel": 3.0,
+            "insurance": 1.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Road Rewards",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "auto_repairs": 2.0,
+            "fuel": 4.0,
+            "insurance": 2.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 6500
+      },
+      {
+        "name": "Driver's Choice",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "auto_repairs": 3.0,
+            "fuel": 2.0,
+            "insurance": 3.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 8000
+      }
+    ],
+    "transaction": {
+      "product": "Transmission Repair",
+      "category": "auto_repairs",
+      "vendor": "Certified Auto Shop",
+      "price": 850.00
+    },
+    "best_card": "Auto Advantage",
+    "explanation": "Auto Advantage provides the highest 4% cashback on auto repairs, making it the best choice for an expensive transmission repair despite Driver's Choice having a higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Fashion Forward",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "apparel": 4.0,
+            "department_stores": 2.0,
+            "online": 1.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Style Seeker",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "apparel": 3.0,
+            "department_stores": 3.0,
+            "online": 1.0
+          }
+        },
+        "apr": 19.5,
+        "credit_limit": 7500
+      },
+      {
+        "name": "Trend Tracker",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "apparel": 2.0,
+            "department_stores": 2.0,
+            "online": 4.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 5500
+      }
+    ],
+    "transaction": {
+      "product": "Designer Shoes",
+      "category": "apparel",
+      "vendor": "Luxury Footwear Boutique",
+      "price": 295.00
+    },
+    "best_card": "Fashion Forward",
+    "explanation": "Fashion Forward offers the highest 4% reward rate on apparel purchases, making it the best choice for designer shoes despite Style Seeker's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Gamer's Edge",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "gaming": 5.0,
+            "electronics": 2.0,
+            "online": 1.0
+          }
+        },
+        "apr": 19.0,
+        "credit_limit": 4500
+      },
+      {
+        "name": "Digital Rewards",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "gaming": 2.0,
+            "electronics": 3.0,
+            "online": 2.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 5000
+      },
+      {
+        "name": "Tech Savvy",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "gaming": 3.0,
+            "electronics": 4.0,
+            "online": 2.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 6000
+      }
+    ],
+    "transaction": {
+      "product": "Limited Edition Gaming Console",
+      "category": "gaming",
+      "vendor": "Video Game Emporium",
+      "price": 550.00
+    },
+    "best_card": "Gamer's Edge",
+    "explanation": "Gamer's Edge offers an exceptional 5% reward rate on gaming purchases, making it the optimal choice for a limited edition console despite its higher APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Culinary Expert",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "kitchenware": 4.0,
+            "groceries": 3.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 6500
+      },
+      {
+        "name": "Gourmet Selection",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "kitchenware": 2.0,
+            "groceries": 4.0,
+            "dining": 2.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Chef's Choice",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "kitchenware": 3.0,
+            "groceries": 2.0,
+            "dining": 4.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 5500
+      }
+    ],
+    "transaction": {
+      "product": "Professional Chef's Knife Set",
+      "category": "kitchenware",
+      "vendor": "Gourmet Kitchen Supply",
+      "price": 320.00
+    },
+    "best_card": "Culinary Expert",
+    "explanation": "Culinary Expert offers the highest 4% rewards rate on kitchenware, making it the best choice for a premium knife set purchase despite Gourmet Selection's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Fitness Fanatic",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "fitness": 5.0,
+            "sporting_goods": 2.0,
+            "healthcare": 1.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 5000
+      },
+      {
+        "name": "Health Enthusiast",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "fitness": 2.0,
+            "sporting_goods": 3.0,
+            "healthcare": 3.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Wellness Warrior",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "fitness": 3.0,
+            "sporting_goods": 1.0,
+            "healthcare": 4.0
+          }
+        },
+        "apr": 15.5,
+        "credit_limit": 4500
+      }
+    ],
+    "transaction": {
+      "product": "Annual Gym Membership",
+      "category": "fitness",
+      "vendor": "Premier Health Club",
+      "price": 840.00
+    },
+    "best_card": "Fitness Fanatic",
+    "explanation": "Fitness Fanatic offers an impressive 5% rewards rate on fitness expenses, making it the optimal choice for an annual gym membership despite its higher APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Jewelry Rewards",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "jewelry": 4.0,
+            "luxury_goods": 2.0,
+            "department_stores": 1.0
+          }
+        },
+        "apr": 19.5,
+        "credit_limit": 10000
+      },
+      {
+        "name": "Luxury Indulgence",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "jewelry": 2.0,
+            "luxury_goods": 4.0,
+            "department_stores": 2.0
+          }
+        },
+        "apr": 21.0,
+        "credit_limit": 15000
+      },
+      {
+        "name": "Prestige Card",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "jewelry": 3.0,
+            "luxury_goods": 3.0,
+            "department_stores": 1.0
+          }
+        },
+        "apr": 20.0,
+        "credit_limit": 12000
+      }
+    ],
+    "transaction": {
+      "product": "Diamond Earrings",
+      "category": "jewelry",
+      "vendor": "Fine Jewelry Boutique",
+      "price": 1800.00
+    },
+    "best_card": "Jewelry Rewards",
+    "explanation": "Jewelry Rewards offers the highest 4% cashback rate on jewelry purchases, making it the optimal choice for expensive diamond earrings despite Prestige Card's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Beauty Buff",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "cosmetics": 5.0,
+            "salons": 2.0,
+            "department_stores": 1.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 4500
+      },
+      {
+        "name": "Glamour Guide",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "cosmetics": 3.0,
+            "salons": 4.0,
+            "department_stores": 1.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 5000
+      },
+      {
+        "name": "Style Setter",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "cosmetics": 2.0,
+            "salons": 2.0,
+            "department_stores": 4.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 4000
+      }
+    ],
+    "transaction": {
+      "product": "Premium Skincare Collection",
+      "category": "cosmetics",
+      "vendor": "Luxury Beauty Retailer",
+      "price": 185.00
+    },
+    "best_card": "Beauty Buff",
+    "explanation": "Beauty Buff provides an exceptional 5% rewards rate on cosmetics purchases, making it the best choice for premium skincare products despite Glamour Guide's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Art Collector",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "art_galleries": 4.0,
+            "museums": 3.0,
+            "entertainment": 1.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 9000
+      },
+      {
+        "name": "Culture Card",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "art_galleries": 2.0,
+            "museums": 4.0,
+            "entertainment": 2.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 7500
+      },
+      {
+        "name": "Creative Rewards",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "art_galleries": 3.0,
+            "museums": 2.0,
+            "entertainment": 3.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 8000
+      }
+    ],
+    "transaction": {
+      "product": "Original Painting",
+      "category": "art_galleries",
+      "vendor": "Contemporary Art Gallery",
+      "price": 1200.00
+    },
+    "best_card": "Art Collector",
+    "explanation": "Art Collector provides the highest 4% rewards rate on art gallery purchases, making it the optimal choice for an original painting despite Creative Rewards' higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Home Theater Pro",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "electronics": 4.0,
+            "streaming": 3.0,
+            "furniture": 1.0
+          }
+        },
+        "apr": 19.0,
+        "credit_limit": 8500
+      },
+      {
+        "name": "Entertainment Elite",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "electronics": 3.0,
+            "streaming": 4.0,
+            "furniture": 1.0
+          }
+        },
+        "apr": 20.0,
+        "credit_limit": 9000
+      },
+      {
+        "name": "Living Space",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "electronics": 2.0,
+            "streaming": 1.0,
+            "furniture": 5.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 7500
+      }
+    ],
+    "transaction": {
+      "product": "High-End Sound System",
+      "category": "electronics",
+      "vendor": "Premium Audio Retailer",
+      "price": 1750.00
+    },
+    "best_card": "Home Theater Pro",
+    "explanation": "Home Theater Pro offers the highest 4% rewards rate on electronics purchases, making it the best choice for an expensive sound system despite Entertainment Elite's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Garden Guru",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "garden_centers": 5.0,
+            "hardware": 2.0,
+            "home_improvement": 1.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Outdoor Living",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "garden_centers": 3.0,
+            "hardware": 3.0,
+            "home_improvement": 2.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Home Expert",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "garden_centers": 2.0,
+            "hardware": 2.0,
+            "home_improvement": 4.0
+          }
+        },
+        "apr": 14.5,
+        "credit_limit": 8000
+      }
+    ],
+    "transaction": {
+      "product": "Landscaping Supplies",
+      "category": "garden_centers",
+      "vendor": "Premium Garden Center",
+      "price": 425.00
+    },
+    "best_card": "Garden Guru",
+    "explanation": "Garden Guru provides an exceptional 5% rewards rate on garden center purchases, making it the optimal choice for landscaping supplies despite its higher APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Beach Vacationer",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "resorts": 4.0,
+            "airfare": 2.0,
+            "dining": 2.0
+          }
+        },
+        "apr": 19.0,
+        "credit_limit": 10000
+      },
+      {
+        "name": "Sun Seeker",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "resorts": 3.0,
+            "airfare": 4.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 20.5,
+        "credit_limit": 12000
+      },
+      {
+        "name": "Tropical Traveler",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "resorts": 2.0,
+            "airfare": 3.0,
+            "dining": 3.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 9000
+      }
+    ],
+    "transaction": {
+      "product": "Beach Resort Package",
+      "category": "resorts",
+      "vendor": "Oceanfront Resort & Spa",
+      "price": 2200.00
+    },
+    "best_card": "Beach Vacationer",
+    "explanation": "Beach Vacationer offers the highest 4% rewards rate on resort purchases, making it the best choice for an expensive beach resort package despite Tropical Traveler's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Wedding Planner",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "event_venues": 5.0,
+            "catering": 3.0,
+            "apparel": 2.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 15000
+      },
+      {
+        "name": "Celebration Card",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "event_venues": 3.0,
+            "catering": 4.0,
+            "apparel": 2.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 12000
+      },
+      {
+        "name": "Special Occasion",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "event_venues": 2.0,
+            "catering": 2.0,
+            "apparel": 4.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 10000
+      }
+    ],
+    "transaction": {
+      "product": "Wedding Venue Reservation",
+      "category": "event_venues",
+      "vendor": "Elegant Banquet Hall",
+      "price": 5500.00
+    },
+    "best_card": "Wedding Planner",
+    "explanation": "Wedding Planner provides an exceptional 5% rewards rate on event venues, making it the optimal choice for an expensive wedding venue reservation despite its higher APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Vintage Collector",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "antiques": 4.0,
+            "auctions": 3.0,
+            "specialty_retail": 1.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 8000
+      },
+      {
+        "name": "Auction Hunter",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "antiques": 2.0,
+            "auctions": 5.0,
+            "specialty_retail": 1.0
+          }
+        },
+        "apr": 19.0,
+        "credit_limit": 9000
+      },
+      {
+        "name": "Specialty Shopper",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "antiques": 2.0,
+            "auctions": 2.0,
+            "specialty_retail": 3.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 7000
+      }
+    ],
+    "transaction": {
+      "product": "Antique Furniture",
+      "category": "antiques",
+      "vendor": "Heritage Antique Market",
+      "price": 1850.00
+    },
+    "best_card": "Vintage Collector",
+    "explanation": "Vintage Collector offers the highest 4% rewards rate on antique purchases, making it the best choice for antique furniture despite Specialty Shopper's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Camera Enthusiast",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "photography": 5.0,
+            "electronics": 2.0,
+            "online": 1.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 7500
+      },
+      {
+        "name": "Digital Creator",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "photography": 3.0,
+            "electronics": 3.0,
+            "online": 2.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 8000
+      },
+      {
+        "name": "Tech Professional",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "photography": 2.0,
+            "electronics": 4.0,
+            "online": 2.0
+          }
+        },
+        "apr": 19.0,
+        "credit_limit": 9000
+      }
+    ],
+    "transaction": {
+      "product": "Professional Camera Lens",
+      "category": "photography",
+      "vendor": "Premium Camera Shop",
+      "price": 1200.00
+    },
+    "best_card": "Camera Enthusiast",
+    "explanation": "Camera Enthusiast provides an exceptional 5% rewards rate on photography purchases, making it the optimal choice for an expensive camera lens despite Digital Creator's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Wine Connoisseur",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "wineries": 5.0,
+            "fine_dining": 3.0,
+            "specialty_food": 1.0
+          }
+        },
+        "apr": 19.5,
+        "credit_limit": 9000
+      },
+      {
+        "name": "Gourmet Rewards",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "wineries": 2.0,
+            "fine_dining": 5.0,
+            "specialty_food": 2.0
+          }
+        },
+        "apr": 20.0,
+        "credit_limit": 10000
+      },
+      {
+        "name": "Epicurean Card",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "wineries": 3.0,
+            "fine_dining": 2.0,
+            "specialty_food": 4.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 8500
+      }
+    ],
+    "transaction": {
+      "product": "Premium Wine Collection",
+      "category": "wineries",
+      "vendor": "Upscale Wine Merchant",
+      "price": 650.00
+    },
+    "best_card": "Wine Connoisseur",
+    "explanation": "Wine Connoisseur offers the highest 5% rewards rate on winery purchases, making it the best choice for a premium wine collection despite Epicurean Card's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Bike Enthusiast",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "bicycle_shops": 5.0,
+            "sporting_goods": 2.0,
+            "fitness": 1.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Outdoor Athlete",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "bicycle_shops": 3.0,
+            "sporting_goods": 4.0,
+            "fitness": 2.0
+          }
+        },
+        "apr": 15.0,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Active Lifestyle",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "bicycle_shops": 2.0,
+            "sporting_goods": 2.0,
+            "fitness": 4.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 5500
+      }
+    ],
+    "transaction": {
+      "product": "High-Performance Bicycle",
+      "category": "bicycle_shops",
+      "vendor": "Professional Cycling Center",
+      "price": 2800.00
+    },
+    "best_card": "Bike Enthusiast",
+    "explanation": "Bike Enthusiast provides an exceptional 5% rewards rate at bicycle shops, making it the optimal choice for an expensive high-performance bicycle despite Active Lifestyle's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Baby Essentials",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "baby_products": 5.0,
+            "childcare": 2.0,
+            "groceries": 2.0
+          }
+        },
+        "apr": 15.5,
+        "credit_limit": 5500
+      },
+      {
+        "name": "Family First",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "baby_products": 3.0,
+            "childcare": 4.0,
+            "groceries": 2.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Parent Partner",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "baby_products": 2.0,
+            "childcare": 3.0,
+            "groceries": 3.0
+          }
+        },
+        "apr": 14.0,
+        "credit_limit": 6500
+      }
+    ],
+    "transaction": {
+      "product": "Premium Baby Stroller",
+      "category": "baby_products",
+      "vendor": "Infant Essentials Boutique",
+      "price": 750.00
+    },
+    "best_card": "Baby Essentials",
+    "explanation": "Baby Essentials offers the highest 5% rewards rate on baby products, making it the best choice for a premium stroller despite Parent Partner's higher base rate and lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Cash Rebate Builder",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "groceries": 3.0,
+            "fuel": 2.0,
+            "transit": 1.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 5500,
+        "annual_fee": 0
+      },
+      {
+        "name": "Loyalty Bonus",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "groceries": 2.5,
+            "fuel": 1.0,
+            "transit": 1.0
+          }
+        },
+        "apr": 18.0,
+        "credit_limit": 8000,
+        "annual_fee": 0,
+        "loyalty_bonus": {
+          "type": "annual_spend",
+          "threshold": 25000,
+          "bonus_value": 200
+        }
+      },
+      {
+        "name": "Balanced Rewards",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "groceries": 2.0,
+            "fuel": 2.0,
+            "transit": 2.0
+          }
+        },
+        "apr": 15.5,
+        "credit_limit": 6000,
+        "annual_fee": 0
+      }
+    ],
+    "transaction": {
+      "product": "Weekly Grocery Shopping",
+      "category": "groceries",
+      "vendor": "Neighborhood Market",
+      "price": 120.00,
+      "annual_spend_projection": 28000
+    },
+    "best_card": "Loyalty Bonus",
+    "explanation": "While Cash Rebate Builder offers a higher 3% immediate reward on groceries compared to Loyalty Bonus's 2.5%, the Loyalty Bonus card's annual bonus of $200 for spending over $25,000 provides greater total value for a customer projected to spend $28,000 annually."
+  },
+  {
+    "cards": [
+      {
+        "name": "Nature Lover",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "outdoor_gear": 4.5,
+            "national_parks": 3.0,
+            "eco_friendly": 2.0
+          }
+        },
+        "apr": 16.8,
+        "credit_limit": 7200
+      },
+      {
+        "name": "Wilderness Explorer",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "outdoor_gear": 3.0,
+            "national_parks": 5.0,
+            "eco_friendly": 1.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 6800
+      },
+      {
+        "name": "Green Living",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "outdoor_gear": 2.0,
+            "national_parks": 1.5,
+            "eco_friendly": 4.0
+          }
+        },
+        "apr": 15.9,
+        "credit_limit": 5500
+      }
+    ],
+    "transaction": {
+      "product": "Ultralight Backpacking Tent",
+      "category": "outdoor_gear",
+      "vendor": "Mountain Equipment Co-op",
+      "price": 389.99
+    },
+    "best_card": "Nature Lover",
+    "explanation": "Nature Lover's 4.5% reward rate on outdoor gear provides the highest cashback for the tent purchase, outperforming the other cards despite Green Living's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Scholar Supreme",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "education": 4.0,
+            "books": 3.0,
+            "office_supplies": 2.0
+          }
+        },
+        "apr": 14.5,
+        "credit_limit": 4200
+      },
+      {
+        "name": "Academic Achiever",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "education": 3.0,
+            "books": 2.5,
+            "office_supplies": 1.5
+          }
+        },
+        "apr": 13.9,
+        "credit_limit": 5000
+      },
+      {
+        "name": "Student Success",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "education": 2.0,
+            "books": 5.0,
+            "office_supplies": 1.0
+          }
+        },
+        "apr": 12.9,
+        "credit_limit": 3500,
+        "special_features": {
+          "student_loan_cashback": 0.5
+        }
+      }
+    ],
+    "transaction": {
+      "product": "Online Course Tuition",
+      "category": "education",
+      "vendor": "Virtual Learning Academy",
+      "price": 1299.00
+    },
+    "best_card": "Scholar Supreme",
+    "explanation": "Scholar Supreme's 4% rewards on education expenses provides the highest immediate value for the online course tuition, even though Student Success offers a lower APR and Academic Achiever has a higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Medical Advantage",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "healthcare": 5.0,
+            "pharmacy": 3.0,
+            "insurance": 2.0
+          }
+        },
+        "apr": 15.9,
+        "credit_limit": 8000,
+        "special_features": {
+          "hsa_compatibility": true
+        }
+      },
+      {
+        "name": "Wellness Builder",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "healthcare": 3.5,
+            "pharmacy": 3.5,
+            "insurance": 1.0
+          }
+        },
+        "apr": 16.9,
+        "credit_limit": 7500
+      },
+      {
+        "name": "Health First",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "healthcare": 4.0,
+            "pharmacy": 2.0,
+            "insurance": 3.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 10000
+      }
+    ],
+    "transaction": {
+      "product": "Specialist Medical Consultation",
+      "category": "healthcare",
+      "vendor": "Regional Medical Center",
+      "price": 475.00
+    },
+    "best_card": "Medical Advantage",
+    "explanation": "Medical Advantage offers the highest 5% rewards rate on healthcare expenses, maximizing cashback on the specialist consultation despite Wellness Builder's higher base rate and Health First's higher credit limit."
+  },
+  {
+    "cards": [
+      {
+        "name": "Digital Nomad",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "coworking_spaces": 4.0,
+            "international": 3.0,
+            "online_services": 2.0
+          }
+        },
+        "apr": 17.9,
+        "credit_limit": 6500,
+        "special_features": {
+          "no_foreign_transaction_fee": true
+        }
+      },
+      {
+        "name": "Global Citizen",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "coworking_spaces": 2.0,
+            "international": 4.5,
+            "online_services": 1.5
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 8000,
+        "special_features": {
+          "no_foreign_transaction_fee": true,
+          "airport_lounge_access": true
+        }
+      },
+      {
+        "name": "Remote Worker",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "coworking_spaces": 5.0,
+            "international": 1.0,
+            "online_services": 3.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 5000
+      }
+    ],
+    "transaction": {
+      "product": "Monthly Coworking Membership",
+      "category": "coworking_spaces",
+      "vendor": "Urban Workspace Hub",
+      "price": 299.00
+    },
+    "best_card": "Remote Worker",
+    "explanation": "Remote Worker's exceptional 5% reward rate on coworking spaces makes it the optimal choice for the monthly membership, despite Global Citizen offering additional travel perks and a higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Craft Connoisseur",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "craft_supplies": 4.5,
+            "hobby_stores": 3.0,
+            "online_marketplaces": 1.5
+          }
+        },
+        "apr": 15.9,
+        "credit_limit": 4800
+      },
+      {
+        "name": "Artisan Rewards",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "craft_supplies": 3.0,
+            "hobby_stores": 4.0,
+            "online_marketplaces": 2.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 5200
+      },
+      {
+        "name": "Creative Cash",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "craft_supplies": 2.0,
+            "hobby_stores": 2.0,
+            "online_marketplaces": 4.0
+          }
+        },
+        "apr": 14.9,
+        "credit_limit": 4500
+      }
+    ],
+    "transaction": {
+      "product": "Professional Sewing Machine",
+      "category": "craft_supplies",
+      "vendor": "Artisan Fabric & Craft",
+      "price": 879.99
+    },
+    "best_card": "Craft Connoisseur",
+    "explanation": "Craft Connoisseur's 4.5% reward rate on craft supplies provides the highest cashback for the sewing machine purchase, despite Creative Cash offering a lower APR and higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Concert VIP",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "live_events": 5.0,
+            "entertainment": 3.0,
+            "dining": 1.0
+          }
+        },
+        "apr": 19.9,
+        "credit_limit": 7500,
+        "special_features": {
+          "presale_ticket_access": true
+        }
+      },
+      {
+        "name": "Festival Fan",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "live_events": 3.5,
+            "entertainment": 3.5,
+            "dining": 2.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 6800
+      },
+      {
+        "name": "Night Out",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "live_events": 2.0,
+            "entertainment": 4.0,
+            "dining": 4.0
+          }
+        },
+        "apr": 17.9,
+        "credit_limit": 6000
+      }
+    ],
+    "transaction": {
+      "product": "Music Festival Weekend Pass",
+      "category": "live_events",
+      "vendor": "Major Event Productions",
+      "price": 450.00
+    },
+    "best_card": "Concert VIP",
+    "explanation": "Concert VIP's superior 5% rewards rate on live events and additional presale ticket access benefits make it the best choice for the festival pass, despite Night Out's lower APR and Festival Fan's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Home Chef",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "gourmet_ingredients": 4.0,
+            "kitchenware": 3.0,
+            "groceries": 2.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Epicurean Elite",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "gourmet_ingredients": 5.0,
+            "kitchenware": 2.0,
+            "groceries": 1.5
+          }
+        },
+        "apr": 17.9,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Kitchen Master",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "gourmet_ingredients": 2.0,
+            "kitchenware": 5.0,
+            "groceries": 1.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 8000
+      }
+    ],
+    "transaction": {
+      "product": "Imported Truffle Collection",
+      "category": "gourmet_ingredients",
+      "vendor": "Specialty Food Importer",
+      "price": 245.00
+    },
+    "best_card": "Epicurean Elite",
+    "explanation": "Epicurean Elite's 5% rewards rate on gourmet ingredients provides the maximum cashback for specialty food items like imported truffles, outperforming Kitchen Master's higher base rate and credit limit."
+  },
+  {
+    "cards": [
+      {
+        "name": "Sustainable Shopper",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "eco_friendly": 4.0,
+            "organic_products": 3.0,
+            "farmers_markets": 2.0
+          }
+        },
+        "apr": 15.5,
+        "credit_limit": 5000,
+        "special_features": {
+          "carbon_offset": true
+        }
+      },
+      {
+        "name": "Green Consumer",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "eco_friendly": 3.0,
+            "organic_products": 4.5,
+            "farmers_markets": 2.0
+          }
+        },
+        "apr": 16.0,
+        "credit_limit": 4500
+      },
+      {
+        "name": "Earth Friendly",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "eco_friendly": 2.5,
+            "organic_products": 2.5,
+            "farmers_markets": 4.0
+          }
+        },
+        "apr": 14.9,
+        "credit_limit": 4800
+      }
+    ],
+    "transaction": {
+      "product": "Solar Phone Charger and Power Bank",
+      "category": "eco_friendly",
+      "vendor": "Sustainable Tech Store",
+      "price": 89.95
+    },
+    "best_card": "Sustainable Shopper",
+    "explanation": "Sustainable Shopper's 4% reward on eco-friendly purchases provides the highest cashback for the solar charger, and its carbon offset feature adds additional environmental value despite Earth Friendly's lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Virtual Reality Buff",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "vr_equipment": 5.0,
+            "gaming": 3.0,
+            "electronics": 1.5
+          }
+        },
+        "apr": 19.9,
+        "credit_limit": 7500
+      },
+      {
+        "name": "Gaming Champion",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "vr_equipment": 3.0,
+            "gaming": 4.5,
+            "electronics": 2.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 6500
+      },
+      {
+        "name": "Tech Innovator",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "vr_equipment": 2.0,
+            "gaming": 2.0,
+            "electronics": 4.0
+          }
+        },
+        "apr": 17.0,
+        "credit_limit": 9000
+      }
+    ],
+    "transaction": {
+      "product": "Premium VR Headset",
+      "category": "vr_equipment",
+      "vendor": "Cutting Edge Technology",
+      "price": 899.99
+    },
+    "best_card": "Virtual Reality Buff",
+    "explanation": "Virtual Reality Buff's exceptional 5% rewards rate on VR equipment makes it the best choice for this high-value headset purchase, despite Tech Innovator's higher base rate and lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Small Business Owner",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "business_services": 4.0,
+            "office_supplies": 3.0,
+            "shipping": 2.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 10000,
+        "special_features": {
+          "quickbooks_integration": true
+        }
+      },
+      {
+        "name": "Entrepreneur Essential",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "business_services": 5.0,
+            "office_supplies": 2.0,
+            "shipping": 2.0
+          }
+        },
+        "apr": 16.9,
+        "credit_limit": 8500
+      },
+      {
+        "name": "Startup Success",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "business_services": 3.0,
+            "office_supplies": 3.0,
+            "shipping": 3.0
+          }
+        },
+        "apr": 15.9,
+        "credit_limit": 7500,
+        "special_features": {
+          "expense_reporting": true
+        }
+      }
+    ],
+    "transaction": {
+      "product": "Annual CRM Software Subscription",
+      "category": "business_services",
+      "vendor": "Cloud Business Solutions",
+      "price": 1199.00
+    },
+    "best_card": "Entrepreneur Essential",
+    "explanation": "Entrepreneur Essential's superior 5% rewards rate on business services provides the highest cashback for the CRM subscription, despite Startup Success offering a lower APR and higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Cloud Architect",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "cloud_services": 5.0,
+            "software_subscriptions": 3.0,
+            "office_supplies": 1.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 9500,
+        "special_features": {
+          "aws_credits": 50
+        }
+      },
+      {
+        "name": "Developer Pro",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "cloud_services": 3.0,
+            "software_subscriptions": 4.0,
+            "office_supplies": 2.0
+          }
+        },
+        "apr": 17.9,
+        "credit_limit": 8000,
+        "special_features": {
+          "github_premium": true
+        }
+      },
+      {
+        "name": "IT Essentials",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "cloud_services": 2.5,
+            "software_subscriptions": 2.5,
+            "office_supplies": 3.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 7000
+      }
+    ],
+    "transaction": {
+      "product": "Annual AWS Infrastructure",
+      "category": "cloud_services",
+      "vendor": "Amazon Web Services",
+      "price": 3600.00
+    },
+    "best_card": "Cloud Architect",
+    "explanation": "Cloud Architect offers the highest 5% cashback on cloud services plus additional AWS credits, making it the optimal choice for expensive AWS infrastructure despite IT Essentials' higher base rate and lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Podcast Producer",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "audio_equipment": 4.5,
+            "digital_subscriptions": 3.0,
+            "online_advertising": 2.0
+          }
+        },
+        "apr": 16.9,
+        "credit_limit": 5800
+      },
+      {
+        "name": "Content Creator",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "audio_equipment": 3.0,
+            "digital_subscriptions": 3.0,
+            "online_advertising": 4.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 6500,
+        "special_features": {
+          "adobe_discount": true
+        }
+      },
+      {
+        "name": "Media Maker",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "audio_equipment": 2.0,
+            "digital_subscriptions": 5.0,
+            "online_advertising": 2.0
+          }
+        },
+        "apr": 15.9,
+        "credit_limit": 4500
+      }
+    ],
+    "transaction": {
+      "product": "Professional Microphone and Interface",
+      "category": "audio_equipment",
+      "vendor": "Pro Audio Supply",
+      "price": 529.95
+    },
+    "best_card": "Podcast Producer",
+    "explanation": "Podcast Producer's 4.5% reward rate on audio equipment provides the highest cashback for the microphone and interface purchase, despite Media Maker's higher base rate and lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Plant Parent",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "plant_nurseries": 5.0,
+            "gardening_tools": 3.0,
+            "home_decor": 1.0
+          }
+        },
+        "apr": 15.5,
+        "credit_limit": 4200
+      },
+      {
+        "name": "Indoor Gardener",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "plant_nurseries": 3.5,
+            "gardening_tools": 3.5,
+            "home_decor": 2.0
+          }
+        },
+        "apr": 14.9,
+        "credit_limit": 3500
+      },
+      {
+        "name": "Home Botanist",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "plant_nurseries": 2.0,
+            "gardening_tools": 4.0,
+            "home_decor": 3.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 5000
+      }
+    ],
+    "transaction": {
+      "product": "Rare Houseplant Collection",
+      "category": "plant_nurseries",
+      "vendor": "Exotic Leaf Nursery",
+      "price": 275.00
+    },
+    "best_card": "Plant Parent",
+    "explanation": "Plant Parent's exceptional 5% rewards rate on plant nursery purchases makes it the optimal choice for the rare houseplant collection, despite Indoor Gardener's lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Global Explorer",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "international_shipping": 4.0,
+            "foreign_currency": 3.0,
+            "travel_insurance": 2.0
+          }
+        },
+        "apr": 19.5,
+        "credit_limit": 9000,
+        "special_features": {
+          "no_foreign_transaction_fee": true
+        }
+      },
+      {
+        "name": "Expat Essentials",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "international_shipping": 5.0,
+            "foreign_currency": 2.0,
+            "travel_insurance": 2.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 7500,
+        "special_features": {
+          "no_foreign_transaction_fee": true,
+          "travel_emergency_assistance": true
+        }
+      },
+      {
+        "name": "Worldly Wise",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "international_shipping": 2.0,
+            "foreign_currency": 4.0,
+            "travel_insurance": 3.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 8000
+      }
+    ],
+    "transaction": {
+      "product": "International Package Shipping",
+      "category": "international_shipping",
+      "vendor": "Global Logistics Provider",
+      "price": 185.50
+    },
+    "best_card": "Expat Essentials",
+    "explanation": "Expat Essentials' superior 5% rewards rate on international shipping makes it the best choice for this transaction, with additional travel emergency assistance providing extra value despite Worldly Wise's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Vintage Vinyl",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "record_stores": 5.0,
+            "music_equipment": 3.0,
+            "concert_tickets": 2.0
+          }
+        },
+        "apr": 16.9,
+        "credit_limit": 4500
+      },
+      {
+        "name": "Audiophile Access",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "record_stores": 3.0,
+            "music_equipment": 4.5,
+            "concert_tickets": 2.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 6000
+      },
+      {
+        "name": "Melody Maker",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "record_stores": 2.0,
+            "music_equipment": 2.0,
+            "concert_tickets": 4.5
+          }
+        },
+        "apr": 15.9,
+        "credit_limit": 5000,
+        "special_features": {
+          "streaming_service_discount": true
+        }
+      }
+    ],
+    "transaction": {
+      "product": "Limited Edition Vinyl Box Set",
+      "category": "record_stores",
+      "vendor": "Classic Vinyl Emporium",
+      "price": 199.99
+    },
+    "best_card": "Vintage Vinyl",
+    "explanation": "Vintage Vinyl's exceptional 5% reward rate at record stores provides maximum cashback for the limited edition vinyl box set, despite Melody Maker offering streaming service discounts and a lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Mental Wellness",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "therapy_services": 5.0,
+            "wellness_apps": 3.0,
+            "fitness": 1.0
+          }
+        },
+        "apr": 15.5,
+        "credit_limit": 6000,
+        "special_features": {
+          "meditation_app_subscription": true
+        }
+      },
+      {
+        "name": "Balanced Life",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "therapy_services": 3.0,
+            "wellness_apps": 3.0,
+            "fitness": 3.0
+          }
+        },
+        "apr": 16.9,
+        "credit_limit": 7000
+      },
+      {
+        "name": "Self-Care Supreme",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "therapy_services": 4.0,
+            "wellness_apps": 4.0,
+            "fitness": 2.0
+          }
+        },
+        "apr": 14.9,
+        "credit_limit": 5500
+      }
+    ],
+    "transaction": {
+      "product": "Monthly Therapy Sessions",
+      "category": "therapy_services",
+      "vendor": "Wellness Counseling Center",
+      "price": 600.00
+    },
+    "best_card": "Mental Wellness",
+    "explanation": "Mental Wellness card offers the highest 5% rewards rate on therapy services plus a meditation app subscription, making it the optimal choice for these monthly sessions despite Self-Care Supreme's lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Film Fanatic",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "movie_theaters": 4.5,
+            "streaming_services": 3.0,
+            "home_entertainment": 2.0
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 5000,
+        "special_features": {
+          "free_movie_tickets": "quarterly"
+        }
+      },
+      {
+        "name": "Cinema Select",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "movie_theaters": 3.5,
+            "streaming_services": 4.0,
+            "home_entertainment": 2.0
+          }
+        },
+        "apr": 16.9,
+        "credit_limit": 4500
+      },
+      {
+        "name": "Home Theater",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "movie_theaters": 2.0,
+            "streaming_services": 3.0,
+            "home_entertainment": 4.5
+          }
+        },
+        "apr": 15.9,
+        "credit_limit": 6000
+      }
+    ],
+    "transaction": {
+      "product": "IMAX Premier Movie Experience",
+      "category": "movie_theaters",
+      "vendor": "Cineplex IMAX",
+      "price": 42.50
+    },
+    "best_card": "Film Fanatic",
+    "explanation": "Film Fanatic offers the highest 4.5% rewards rate on movie theater purchases plus quarterly free movie tickets, making it the best choice for the IMAX premier experience despite Home Theater's lower APR."
+  },
+  {
+    "cards": [
+      {
+        "name": "Local Artisan",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "farmers_markets": 5.0,
+            "local_shops": 3.0,
+            "specialty_foods": 2.0
+          }
+        },
+        "apr": 14.9,
+        "credit_limit": 4200
+      },
+      {
+        "name": "Community Supporter",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "farmers_markets": 3.0,
+            "local_shops": 4.0,
+            "specialty_foods": 2.0
+          }
+        },
+        "apr": 15.5,
+        "credit_limit": 5000,
+        "special_features": {
+          "charity_donation_match": 0.5
+        }
+      },
+      {
+        "name": "Foodie Favorite",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "farmers_markets": 2.0,
+            "local_shops": 2.0,
+            "specialty_foods": 5.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 4800
+      }
+    ],
+    "transaction": {
+      "product": "Seasonal Produce Subscription",
+      "category": "farmers_markets",
+      "vendor": "Community Supported Agriculture",
+      "price": 325.00
+    },
+    "best_card": "Local Artisan",
+    "explanation": "Local Artisan's exceptional 5% rewards rate at farmers markets provides the maximum cashback for the seasonal produce subscription, outperforming Community Supporter despite its charity donation matching benefit."
+  },
+  {
+    "cards": [
+      {
+        "name": "Renewable Energy",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "solar_products": 5.0,
+            "sustainable_home": 3.0,
+            "utilities": 2.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 12000,
+        "special_features": {
+          "carbon_offset_program": true
+        }
+      },
+      {
+        "name": "Green Home",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "solar_products": 3.0,
+            "sustainable_home": 4.5,
+            "utilities": 1.5
+          }
+        },
+        "apr": 17.9,
+        "credit_limit": 15000
+      },
+      {
+        "name": "Efficiency Expert",
+        "reward_plan": {
+          "base_rate": 2.0,
+          "categories": {
+            "solar_products": 2.0,
+            "sustainable_home": 2.0,
+            "utilities": 4.0
+          }
+        },
+        "apr": 15.9,
+        "credit_limit": 10000
+      }
+    ],
+    "transaction": {
+      "product": "Home Solar Panel System",
+      "category": "solar_products",
+      "vendor": "Clean Energy Solutions",
+      "price": 8500.00
+    },
+    "best_card": "Renewable Energy",
+    "explanation": "Renewable Energy's superior 5% rewards rate on solar products makes it the optimal choice for an expensive solar panel system purchase, with additional carbon offset benefits despite Efficiency Expert's lower APR and Green Home's higher base rate."
+  },
+  {
+    "cards": [
+      {
+        "name": "Retro Gamer",
+        "reward_plan": {
+          "base_rate": 1.0,
+          "categories": {
+            "classic_gaming": 5.0,
+            "collectibles": 3.0,
+            "online_marketplaces": 1.5
+          }
+        },
+        "apr": 17.5,
+        "credit_limit": 4500
+      },
+      {
+        "name": "Collector's Choice",
+        "reward_plan": {
+          "base_rate": 1.25,
+          "categories": {
+            "classic_gaming": 3.0,
+            "collectibles": 4.5,
+            "online_marketplaces": 2.0
+          }
+        },
+        "apr": 18.5,
+        "credit_limit": 5500
+      },
+      {
+        "name": "Digital Marketplace",
+        "reward_plan": {
+          "base_rate": 1.5,
+          "categories": {
+            "classic_gaming": 2.0,
+            "collectibles": 2.0,
+            "online_marketplaces": 4.0
+          }
+        },
+        "apr": 16.5,
+        "credit_limit": 6000
+      }
+    ],
+    "transaction": {
+      "product": "Sealed Vintage Video Game",
+      "category": "classic_gaming",
+      "vendor": "Retro Game Vault",
+      "price": 425.00
+    },
+    "best_card": "Retro Gamer",
+    "explanation": "Retro Gamer's exceptional 5% rewards rate on classic gaming purchases provides the highest cashback for the sealed vintage video game, despite Digital Marketplace's lower APR and higher base rate."
+  }
+]
+
+
+  
