@@ -60,54 +60,9 @@ image = image.run_commands([
     "chmod -R 777 /root/.triton"
 ])
 
-# Add DeepSpeed configuration file optimized for 8 GPUs
-deepspeed_config = {
-    "fp16": {
-        "enabled": True
-    },
-    "zero_optimization": {
-        "stage": 3,
-        "offload_optimizer": {
-            "device": "cpu"
-        },
-        "offload_param": {
-            "device": "cpu"
-        },
-        "overlap_comm": True,
-        "contiguous_gradients": True,
-        "reduce_bucket_size": 5e8,
-        "stage3_prefetch_bucket_size": 5e8,
-        "stage3_param_persistence_threshold": 1e6,
-        "sub_group_size": 1e9,
-        "stage3_max_live_parameters": 1e9,
-        "stage3_max_reuse_distance": 1e9,
-        "gather_16bit_weights_on_model_save": True
-    },
-    "train_batch_size": "auto",  # Let DeepSpeed calculate the global batch size
-    "train_micro_batch_size_per_gpu": 2,
-    "gradient_accumulation_steps": 4,  # Adjusted for 8 GPUs
-    "optimizer": {
-        "type": "AdamW",
-        "params": {
-            "lr": 5e-6,
-            "weight_decay": 0.01,
-            "eps": 1e-8
-        }
-    },
-    "scheduler": {
-        "type": "WarmupLR",
-        "params": {
-            "warmup_min_lr": 0,
-            "warmup_max_lr": 5e-6,
-            "warmup_num_steps": 100
-        }
-    },
-    "steps_per_print": 10,
-    "wall_clock_breakdown": True
-}
-
-with open("ds_config.json", "w") as f:
-    json.dump(deepspeed_config, f)
+# Load DeepSpeed configuration from file instead of defining it inline
+with open("ds_config.json", "r") as f:
+    deepspeed_config = json.load(f)
 
 image = image.add_local_file("ds_config.json", remote_path="/root/ds_config.json")
 
