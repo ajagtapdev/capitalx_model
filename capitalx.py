@@ -74,142 +74,6 @@ image = (modal.Image.debian_slim()
 model_volume = modal.Volume.from_name("models", create_if_missing=True)
 
 @app.function(
-    image=image,
-    timeout=300,
-    secrets=[modal.Secret.from_name("HUGGING_FACE_TOKEN")],
-    volumes = {"/model": model_volume}
-)
-
-
-def test_create_prompt():
-    """Test the prompt creation function."""
-    sample = {
-        "cards": [
-            {
-                "name": "Card Test",
-                "reward_plan": {
-                    "base_rate": 1.0,
-                    "categories": {"groceries": 3.0}
-                },
-                "apr": 15.0,
-                "credit_limit": 5000
-            }
-        ],
-        "transaction": {
-            "product": "Test Product",
-            "category": "groceries",
-            "vendor": "Test Vendor",
-            "price": 50.0
-        },
-        "best_card": "Card Test",
-        "explanation": "Highest grocery rewards."
-    }
-    prompt = create_prompt(sample)
-    expected = (
-        "Cards:\n"
-        "Card Test: APR 15.0%, Credit Limit 5000, Rewards: base 1.0, groceries 3.0%\n"
-        "Transaction:\n"
-        "Product: Test Product, Category: groceries, Vendor: Test Vendor, Price: 50.0\n"
-        "Output: "
-    )
-    assert prompt == expected, f"Prompt does not match expected. Got: {prompt}"
-    print("test_create_prompt passed.")
-
-def test_create_target():
-    """Test the target creation function."""
-    sample = {
-        "best_card": "Card Test",
-        "explanation": "Highest grocery rewards."
-    }
-    target = create_target(sample)
-    expected = "Best card: Card Test. Explanation: Highest grocery rewards."
-    assert target == expected, f"Target does not match expected. Got: {target}"
-    print("test_create_target passed.")
-
-def test_inference(model_path="fine_tuned_model/best"):
-    """Test the trained model with a sample transaction."""
-    import torch
-    from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
-    from peft import PeftModel, PeftConfig
-    
-    hf_token = os.environ.get("HUGGING_FACE_TOKEN")
-    
-    try:
-        # For LoRA fine-tuned models
-        print(f"Loading LoRA adapter from {model_path}")
-        
-        # First load base model (for adapter)
-        config = PeftConfig.from_pretrained(model_path)
-        print(f"Detected base model: {config.base_model_name_or_path}")
-        
-        tokenizer = AutoTokenizer.from_pretrained(
-            config.base_model_name_or_path, 
-            token=hf_token
-        )
-        
-        # Load base model with 8-bit quantization
-        quantization_config = BitsAndBytesConfig(load_in_8bit=True)
-        
-        base_model = AutoModelForCausalLM.from_pretrained(
-            config.base_model_name_or_path,
-            quantization_config=quantization_config,
-            device_map="auto",
-            token=hf_token
-        )
-        
-        # Load adapter on top of base model
-        model = PeftModel.from_pretrained(base_model, model_path)
-        
-    except Exception as e:
-        print(f"Failed to load as PEFT model, trying standard model: {e}")
-        # Try loading as regular model
-        tokenizer = AutoTokenizer.from_pretrained(model_path, token=hf_token)
-        model = AutoModelForCausalLM.from_pretrained(
-            model_path, 
-            device_map="auto",
-            token=hf_token
-        )
-    
-    model.eval()
-    
-    # Sample test case
-    sample = {
-        "cards": [
-            {
-                "name": "Freedom Flex",
-                "reward_plan": {
-                    "base_rate": 1.0,
-                    "categories": {"dining": 3.0, "groceries": 5.0}
-                },
-                "apr": 15.0,
-                "credit_limit": 5000
-            },
-            {
-                "name": "Sapphire Preferred",
-                "reward_plan": {
-                    "base_rate": 1.0,
-                    "categories": {"travel": 4.0, "dining": 3.0}
-                },
-                "apr": 18.0,
-                "credit_limit": 10000
-            }
-        ],
-        "transaction": {
-            "product": "Dinner",
-            "category": "dining",
-            "vendor": "Restaurant",
-            "price": 75.0
-        }
-    }
-    
-    result = generate_recommendation(model, tokenizer, sample)
-    print("Sample Transaction:")
-    print(create_prompt(sample))
-    print("\nModel Recommendation:")
-    print(result)
-
-# Create separate containers for different training stages
-@app.function(
     image=image, 
     timeout=36000,
     gpu="H100:8",
@@ -414,15 +278,6 @@ def process_and_train(model_name=MODEL_NAME):
     
     return output_dir
 
-
-@app.function(
-    image=image,
-    gpu="H100:8",
-    timeout=600,
-    secrets=[modal.Secret.from_name("HUGGING_FACE_TOKEN")],
-    volumes = {"/model": model_volume}
-)
-
 @app.function(
     image=image,
     gpu="H100:1",  # One GPU is sufficient for evaluation
@@ -556,7 +411,7 @@ def run_evaluation(model_path="/model/model_output/best", model_name=MODEL_NAME)
     return results
 
 @app.local_entrypoint()
-def main(model_name=MODEL_NAME):  # Remove test_auth and test_gpus parameters
+def main(model_name=MODEL_NAME):
     """Main entry point for the script."""
     # Load token from environment (only for local testing)
     from dotenv import load_dotenv
