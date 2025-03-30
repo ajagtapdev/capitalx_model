@@ -27,44 +27,49 @@ HF_TOKEN_PATH = f"{HF_TOKEN_DIR}/token"
 
 app = modal.App("credit_card_recommender")
 
-# Create a Modal image with all required packages
-image = modal.Image.debian_slim().pip_install([
-    "torch>=2.0.0", 
-    "transformers>=4.30.0", 
-    "accelerate>=0.20.0", 
-    "bitsandbytes>=0.39.0", 
-    "peft>=0.4.0", 
-    "deepspeed>=0.9.0",  # Upgrade to a newer version
-    "huggingface_hub", 
-    "python-dotenv"
-])
-
-# Add data file to the image
-image = image.add_local_file(
-    "capitalx_training_data.json", 
-    remote_path="/root/capitalx_training_data.json"
+# Create a Modal image with all required packages and CUDA setup
+image = (modal.Image.debian_slim()
+    .run_commands([
+        # Add NVIDIA CUDA repository
+        "apt-get update && apt-get install -y wget gnupg",
+        "wget https://developer.download.nvidia.com/compute/cuda/repos/debian11/x86_64/cuda-keyring_1.0-1_all.deb",
+        "dpkg -i cuda-keyring_1.0-1_all.deb",
+        "apt-get update",
+        # Install CUDA toolkit
+        "apt-get install -y cuda-toolkit-12-2",
+        # Set CUDA environment variables
+        "echo 'export CUDA_HOME=/usr/local/cuda' >> /etc/profile",
+        "echo 'export PATH=$PATH:$CUDA_HOME/bin' >> /etc/profile",
+        "echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> /etc/profile",
+        # Create triton directory
+        "mkdir -p /root/.triton/autotune",
+        "chmod -R 777 /root/.triton"
+    ])
+    .pip_install([
+        "torch>=2.0.0", 
+        "transformers>=4.30.0", 
+        "accelerate>=0.20.0", 
+        "bitsandbytes>=0.39.0", 
+        "peft>=0.4.0", 
+        "deepspeed>=0.9.0",
+        "huggingface_hub", 
+        "python-dotenv"
+    ])
+    # Add all local files LAST
+    .add_local_file(
+        "capitalx_training_data.json", 
+        remote_path="/root/capitalx_training_data.json"
+    )
+    .add_local_file(
+        "preprocessing.py",
+        remote_path="/root/preprocessing.py"
+    )
+    .add_local_file(
+        "ds_config.json", 
+        remote_path="/root/ds_config.json"
+    )
+    .add_local_python_source("preprocessing")
 )
-
-# Add preprocessing module to the image
-image = image.add_local_file(
-    "preprocessing.py",
-    remote_path="/root/preprocessing.py"
-)
-
-# Add this line after creating the initial image
-image = image.add_local_python_source("preprocessing")
-
-# After the initial image creation, add this directory creation step
-image = image.run_commands([
-    "mkdir -p /root/.triton/autotune",
-    "chmod -R 777 /root/.triton"
-])
-
-# Load DeepSpeed configuration from file instead of defining it inline
-with open("ds_config.json", "r") as f:
-    deepspeed_config = json.load(f)
-
-image = image.add_local_file("ds_config.json", remote_path="/root/ds_config.json")
 
 model_volume = modal.Volume.from_name("models", create_if_missing=True)
 
@@ -275,12 +280,14 @@ def process_and_train(model_name=MODEL_NAME):
     import os
     import torch
     import json
-    import torch.distributed as dist
-    from torch.utils.data import DataLoader, DistributedSampler
-    from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
-    from transformers import Trainer, TrainingArguments
-    from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
     from huggingface_hub import login
+    from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, Trainer, TrainingArguments
+    from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+    
+    # Set CUDA environment variables explicitly
+    os.environ["CUDA_HOME"] = "/usr/local/cuda"
+    os.environ["PATH"] = f"{os.environ['PATH']}:/usr/local/cuda/bin"
+    os.environ["LD_LIBRARY_PATH"] = f"{os.environ.get('LD_LIBRARY_PATH', '')}:/usr/local/cuda/lib64"
     
     # Authentication first
     hf_token = os.environ.get("HUGGING_FACE_TOKEN")
@@ -745,37 +752,11 @@ def run_evaluation(model_path="/model/model_output/best", model_name=MODEL_NAME)
     return results
 
 @app.local_entrypoint()
-def main(model_name=MODEL_NAME, test_auth=False, test_gpus=False):  # Set test_gpus default to False
+def main(model_name=MODEL_NAME):  # Remove test_auth and test_gpus parameters
     """Main entry point for the script."""
     # Load token from environment (only for local testing)
     from dotenv import load_dotenv
     load_dotenv()
-    
-    if test_auth:
-        print("Testing Hugging Face authentication...")
-        result = test_huggingface_auth.remote(model_name)
-        print(json.dumps(result, indent=2))
-        return
-    
-    # Always run GPU test before proceeding with training
-    print("Testing GPU setup...")
-    gpu_result = test_gpu_setup.remote()
-    print(json.dumps(gpu_result, indent=2))
-    
-    # Check if we have enough GPUs for multi-GPU training
-    if not gpu_result.get("cuda_available"):
-        print("ERROR: CUDA is not available. Cannot proceed with GPU training.")
-        return
-    
-    num_gpus = gpu_result.get("num_gpus", 0)
-    if num_gpus < 2:
-        print(f"WARNING: Only {num_gpus} GPU detected. Multi-GPU training requires at least 2 GPUs.")
-        proceed = input("Do you want to proceed with single-GPU training? (y/n): ")
-        if proceed.lower() != 'y':
-            print("Training aborted.")
-            return
-    else:
-        print(f"Found {num_gpus} GPUs. Proceeding with multi-GPU training.")
     
     print(f"Starting multi-GPU fine-tuning workflow for {model_name}")
     
